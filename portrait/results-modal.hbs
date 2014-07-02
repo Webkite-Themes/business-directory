@@ -29,7 +29,7 @@
           <li>
             {{#if filterable}}
               <b class="inline-filter-button">
-                <a class="webkite-toggle" data-target=".{{../../id}}-{{name}}-details-menu">{{downcase name}}<i></i></a>
+                <a class="webkite-toggle" data-target=".{{../../id}}-{{name}}-details-menu">{{downcase displayName}}<i></i></a>
                 <ul class="{{../../id}}-{{name}}-details-menu inline-filter-menu webkite-hide webkite-menu">
                   {{#each filterableValues}}
                     <li><a href="#" class="webkite-add-filter webkite-toggle" data-target=".{{../../../id}}-{{../name}}-details-menu" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a></li>
@@ -40,7 +40,7 @@
                 {{#each values}}<a href="#" class="webkite-add-filter" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a>{{#unless @last}}, <br>{{/unless}}{{/each}}
               </span>
             {{else}}
-              <b>{{downcase name}}</b>
+              <b>{{downcase displayName}}</b>
               <span class="facet-values">{{displayValue}}</span>
             {{/if}}
           </li>
@@ -56,31 +56,31 @@
         {{/facet}}
         {{#facet name="Website"}}
           <li>
-            <b>website</b>
+            <b>{{downcase displayName}}</b>
             <span class="facet-values"><a href="{{displayValue}}" class="webkite-website">{{displayValue}}</a></span>
           </li>
         {{/facet}}
         {{#facet name="Fax Number"}}
           <li>
-            <b>fax number</b>
+            <b>{{downcase displayName}}</b>
             <span class="facet-values"><a href="tel:{{displayValue}}">{{displayValue}}</a></span>
           </li>
         {{/facet}}
         {{#facet name="Email"}}
           <li>
-            <b>email</b>
+            <b>{{downcase displayName}}</b>
             <span class="facet-values"><a href="mailto:{{displayValue}}">{{displayValue}}</a></span>
           </li>
         {{/facet}}
         {{#facet name="Facebook"}}
           <li>
-            <b>facebook</b>
+            <b>{{downcase displayName}}</b>
             <span class="facet-values"><a href="{{displayValue}}" target="_blank" class="webkite-website">{{displayValue}}</a></span>
           </li>
         {{/facet}}
         {{#facet name="Twitter"}}
           <li>
-            <b>twitter</b>
+            <b>{{downcase displayName}}</b>
             <span class="facet-values"><a href="https://twitter.com/{{displayValue}}" target="_blank" class="webkite-website">{{displayValue}}</a></span>
           </li>
         {{/facet}}
