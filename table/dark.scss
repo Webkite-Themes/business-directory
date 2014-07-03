@@ -147,8 +147,8 @@ $colorVariant:dark;
       display: inline-block;
       width: 100%;
       }
-    span.address a > span{display: inline-block; width: 100%;}
-    .webkite-address .city, .webkite-address  .state{display: inline;}
+    span.address a > span{display: block; width: 100%; line-height:1.4em;}
+    .webkite-address .city, .webkite-address  .state{display: inline; overflow:visible;}
     .city + .state:before{content: ", ";}
     }
       

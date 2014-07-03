@@ -629,10 +629,12 @@
   display: inline-block;
   width: 100%; }
 #webkite-results td ul span.address a > span {
-  display: inline-block;
-  width: 100%; }
+  display: block;
+  width: 100%;
+  line-height: 1.4em; }
 #webkite-results td ul .webkite-address .city, #webkite-results td ul .webkite-address .state {
-  display: inline; }
+  display: inline;
+  overflow: visible; }
 #webkite-results td ul .city + .state:before {
   content: ", "; }
 
