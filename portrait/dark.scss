@@ -233,7 +233,6 @@ $colorVariant:dark;
       padding-bottom: $mainGutter/2;
       text-align: left;
       b, .facet-values{display: inline-block;width: 100%;}
-      b{font-weight: 700;}
       }
     }
   .webkite-modal-block-forty{
@@ -300,6 +299,7 @@ $colorVariant:dark;
 
   .webkite-result li b, .webkite-result-modal li b{
     position: relative;
+    font-weight:700;
     > .webkite-toggle{
       @include boxedUp;
       @include roundedUp(.188em);

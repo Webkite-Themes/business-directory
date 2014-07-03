@@ -759,8 +759,6 @@
       #webkite-results .webkite-modal-block-forty li b, #webkite-results .webkite-modal-block-forty li .facet-values, #webkite-results .webkite-modal-block-sixty li b, #webkite-results .webkite-modal-block-sixty li .facet-values {
         display: inline-block;
         width: 100%; }
-      #webkite-results .webkite-modal-block-forty li b, #webkite-results .webkite-modal-block-sixty li b {
-        font-weight: 700; }
   #webkite-results .webkite-modal-block-forty {
     width: 39%; }
     #webkite-results .webkite-modal-block-forty img {
@@ -818,7 +816,8 @@
 
 /************************************** INLINE FILTERS */
 #webkite-results .webkite-result li b, #webkite-results .webkite-result-modal li b {
-  position: relative; }
+  position: relative;
+  font-weight: 700; }
   #webkite-results .webkite-result li b > .webkite-toggle, #webkite-results .webkite-result-modal li b > .webkite-toggle {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
