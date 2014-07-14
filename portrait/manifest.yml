@@ -36,3 +36,12 @@ assets:
     - footer.handlebars.js
     - paginator.handlebars.js
     - results-modal.handlebars.js
+
+preview-images:
+  light:
+    small: light-small.png
+    large: light-large.png
+  dark:
+    small: dark-small.png
+    large: dark-large.png
+
