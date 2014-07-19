@@ -111,7 +111,6 @@ $colorVariant:dark;
       padding: $mainGutter/4 $mainGutter/2;
       margin-top: $mainGutter;
       text-align: center;
-      width: 4.375em;
       }
     a.more-button{
       background: $linkColor;
@@ -210,7 +209,6 @@ $colorVariant:dark;
       font: 400 .75em/1 "Open Sans";
       padding: $mainGutter/5 $mainGutter/2;
       text-align: center;
-      width: 4.375em;
       background: $lightOpacity;
       &:hover{background: $lightOpacity*2;}
       }
