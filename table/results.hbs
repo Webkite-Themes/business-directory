@@ -16,7 +16,7 @@
             <span>{{#with (find facets name="Business Name")}}{{displayName}}{{/with}}</span>
           {{/if}}
         </th>
-        <th class="webkite-address until-xs"><span class="md-only">Contact Info</span></th>
+        <th class="webkite-address until-xs"><span class="md-only">{{t "Contact Info" default="Contact Info"}}</span></th>
         <th class="until-sm">
           {{#if (find facets filterable=true name="Category")}}
             <span>{{#with (find facets filterable=true name="Category")}}{{displayName}}{{/with}}</span>
@@ -39,7 +39,7 @@
                 {{/facet}}
                 {{#any (find facets name="Address 1") (find facets name="City") (find facets name="State") (find facets name="Zip Code") (find facets name="Country") (find facets name="Address 2")}}
                   <li class="xs-only">
-                    <b>address</b>
+                    <b>{{downcase (t "Address" default="Address")}}</b>
                     <span class="facet-values address">
                       <a target="_blank" href="http://maps.google.com/?q={{#facet name='Address 1'}}{{displayValue}}{{/facet}} {{#facet name='City'}}{{displayValue}}{{/facet}} {{#facet name='State'}}{{displayValue}}{{/facet}} {{#facet name='Zip Code'}}{{displayValue}}{{/facet}} {{#facet name='Country'}}{{displayValue}}{{/facet}}" class="webkite-address">
                         {{#facet name="Address 1"}}<span>{{displayValue}}</span>{{/facet}}
@@ -86,7 +86,7 @@
               <ul>
                 {{#any (find facets name="Address 1") (find facets name="City") (find facets name="State") (find facets name="Zip Code") (find facets name="Country") (find facets name="Address 2")}}
                   <li>
-                    <b class="sm-only">address</b>
+                    <b class="sm-only">{{downcase (t "Address" default="Address")}}</b>
                     <span class="facet-values address">
                       <a target="_blank" href="http://maps.google.com/?q={{#facet name='Address 1'}}{{displayValue}}{{/facet}} {{#facet name='City'}}{{displayValue}}{{/facet}} {{#facet name='State'}}{{displayValue}}{{/facet}} {{#facet name='Zip Code'}}{{displayValue}}{{/facet}} {{#facet name='Country'}}{{displayValue}}{{/facet}}" class="webkite-address">
                         {{#facet name="Address 1"}}<span>{{displayValue}}</span>{{/facet}}
