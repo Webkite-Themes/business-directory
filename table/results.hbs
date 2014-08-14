@@ -9,7 +9,9 @@
   <table>
     <thead class="until-xs">
       <tr>
-        <th class="image-thumbnail"></th>
+        {{#unless (find facets name="Image" empty=true)}}
+          <th class="image-thumbnail"></th>
+        {{/unless}}
         <th class="webkite-name webkite-apply-sort">
           {{#if (find facets sortable=true name="Business Name")}}
             {{#with (find facets name="Business Name")}}
@@ -31,8 +33,12 @@
     {{#with items}}
       {{#each this}}
         <tbody>
-          <tr class="webkite-result">      
-            <td class="image-thumbnail until-xs">{{#facet name="Image"}}<div class="image-thumbnail" style="background-image:url({{displayValue}});"></div>{{/facet}}</td>
+          <tr class="webkite-result">    
+            {{#unless (find ../../facets name="Image" empty=true)}}
+              <td class="image-thumbnail until-xs">
+                {{#facet name="Image"}}<div class="image-thumbnail" style="background-image:url({{displayValue}});"></div>{{/facet}}
+              </td>
+            {{/unless}}
             <td class="webkite-name">
               <ul>
                 {{#facet name="Business Name"}}
@@ -156,9 +162,28 @@
               {{/any}}
             </td>
           </tr>
-          {{#any (find facets name="Image") (find facets name="Description") (find facets name="Website") (find facets name="Email") (find facets name="Fax Number") (find facets name="Facebook") (find facets name="Twitter")}}
-            <tr id="{{this.id}}" class="webkite-item-details">{{>result-details}}</tr>
-          {{/any}}
+          
+          {{#if (find ../../facets name="Image" empty=true)}}
+            {{#any (find facets name="Image") (find facets name="Description") (find facets name="Website") (find facets name="Email") (find facets name="Fax Number") (find facets name="Facebook") (find facets name="Twitter")}}
+              <tr id="{{this.id}}" class="webkite-item-details">
+                <td class="until-xs"></td>
+                <td colspan="3">
+                  {{>result-details}}
+                </td>
+              </tr>
+            {{/any}}
+          {{else}}
+            {{#any (find facets name="Image") (find facets name="Description") (find facets name="Website") (find facets name="Email") (find facets name="Fax Number") (find facets name="Facebook") (find facets name="Twitter")}}
+              <tr id="{{this.id}}" class="webkite-item-details">
+                <td colspan="2" class="webkite-full-image until-xs">
+                  <ul>{{#facet name="Image"}}<img src="{{displayValue}}"/>{{/facet}}</ul>
+                </td>
+                <td colspan="3">
+                  {{>result-details}}
+                </td>
+              </tr>
+            {{/any}}
+          {{/if}}         
         </tbody>
       {{/each}}
     {{/with}}
