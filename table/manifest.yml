@@ -2,6 +2,8 @@ theme:
   name: business-directory-table
   
 settings:
+  embeddable:
+    true
   pagination:
     - 10
     - 25
