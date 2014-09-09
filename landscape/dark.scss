@@ -1,15 +1,16 @@
 $colorVariant:dark;
+$themeName:business-directory-landscape;
 
 //CALL UNIVERSALS
 @import '../globals/universals';
 
 /* RESET */
-#webkite-results{
+#webkite-results.#{$themeName}{
   @include resetThings;
   }
 
 /****************************************** BEGIN STYLES */
-#webkite-results{
+#webkite-results.#{$themeName}{
   background: $backgroundColor;
   border: 1px solid $lighterOpacity;
   @include roundedUp(.625em);
@@ -28,7 +29,7 @@ $colorVariant:dark;
   }
   
 /* TYPOGRAPHY */
-#webkite-results{
+#webkite-results.#{$themeName}{
   h1, h2{
     margin: 0;
     }
@@ -47,7 +48,7 @@ $colorVariant:dark;
 @include universalStyles;
   
 /********************************************** BLOCKS */
-#webkite-results{
+#webkite-results.#{$themeName}{
 
   .webkite-block{
     display: inline-block;
@@ -88,7 +89,7 @@ $colorVariant:dark;
   }
   
 /************************************ LANDSCAPE RESULTS */
-#webkite-results{
+#webkite-results.#{$themeName}{
   
   .webkite-result{
     text-align: justify;
@@ -131,7 +132,7 @@ $colorVariant:dark;
   }
   
 /************************************** INLINE FILTERS */
-#webkite-results{
+#webkite-results.#{$themeName}{
 
   .webkite-block li b{
     position: relative;
@@ -200,7 +201,7 @@ $colorVariant:dark;
 }
 
 /******************************************* NO RESULTS */
-#webkite-results{
+#webkite-results.#{$themeName}{
   
   .webkite-no-results{
     padding: $mainGutter 0;
@@ -214,7 +215,7 @@ $colorVariant:dark;
   }
   
 /************************************** ELEMENT QUERIES */
-#webkite-results.xs{
+#webkite-results.#{$themeName}.xs{
   .webkite-block{
     width: 100%;
     padding-right: 0;
@@ -229,7 +230,7 @@ $colorVariant:dark;
     }
   }
   
-#webkite-results.sm{
+#webkite-results.#{$themeName}.sm{
   .webkite-block ul li{
     b, a, span{width: 100%;}
     .webkite-toggle{width: auto;}

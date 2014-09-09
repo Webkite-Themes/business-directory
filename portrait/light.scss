@@ -1,16 +1,17 @@
 //COLOR PALETTE
 $colorVariant:light;
+$themeName:business-directory-portrait;
 
 //CALL UNIVERSALS
 @import '../globals/universals';
 
 /* RESET */
-#webkite-results{
+#webkite-results.#{$themeName}{
   @include resetThings;
   }
 
 /****************************************** BEGIN STYLES */
-#webkite-results{
+#webkite-results.#{$themeName}{
   background: $backgroundColor;
   border: 1px solid $lighterOpacity;
   @include roundedUp(.625em);
@@ -30,7 +31,7 @@ $colorVariant:light;
   }
   
 /* TYPOGRAPHY */
-#webkite-results{
+#webkite-results.#{$themeName}{
   h2{
     color: $medOpacity;
     display: inline-block;
@@ -48,7 +49,7 @@ $colorVariant:light;
 @include universalStyles;
   
 /********************************************** BLOCKS */
-#webkite-results{
+#webkite-results.#{$themeName}{
   
   .webkite-results-container{
     @include breakThat;
@@ -72,7 +73,7 @@ $colorVariant:light;
   }
   
 /************************************ PORTRAIT RESULTS */
-#webkite-results{
+#webkite-results.#{$themeName}{
  
   .webkite-result{
     @include boxedUp;
@@ -155,7 +156,7 @@ $colorVariant:light;
   }
   
 /*************************************** DETAILS MODAL */
-#webkite-results{
+#webkite-results.#{$themeName}{
   .webkite-item-details{
     @include boxedUp;
     max-width: 43.750em;
@@ -295,7 +296,7 @@ $colorVariant:light;
   }
 
 /************************************** INLINE FILTERS */
-#webkite-results{
+#webkite-results.#{$themeName}{
 
   .webkite-result li b, .webkite-result-modal li b{
     position: relative;
@@ -369,7 +370,7 @@ $colorVariant:light;
 }
 
 /******************************************* NO RESULTS */
-#webkite-results{
+#webkite-results.#{$themeName}{
   
   .webkite-no-results{
     padding: $mainGutter 0;
@@ -382,7 +383,7 @@ $colorVariant:light;
   }
    
 /************************************** ELEMENT QUERIES */
-#webkite-results.xs{
+#webkite-results.#{$themeName}.xs{
   .webkite-block{
     width: 100%;
     padding-right: 0;
@@ -413,7 +414,7 @@ $colorVariant:light;
     }
   }
   
-#webkite-results.sm{
+#webkite-results.#{$themeName}.sm{
   .webkite-result-wrapper{width: 48%;}
   .webkite-item-details{
     max-width: 25em;
@@ -435,7 +436,7 @@ $colorVariant:light;
 
 /* ie 10/11 modal fixes */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-#webkite-results{
+#webkite-results.#{$themeName}{
   .webkite-item-details{
     width:auto;
     max-width: 43.750em;
@@ -448,7 +449,7 @@ $colorVariant:light;
     transform: translateY(-50%) translateX(-50%);
     }
   }
-#webkite-results.xs{
+#webkite-results.#{$themeName}.xs{
   .webkite-item-details{
     max-width: 21.875em;
     width:auto;
@@ -457,7 +458,7 @@ $colorVariant:light;
     margin-right:-50%;
     }
   }
-#webkite-results.sm{
+#webkite-results.#{$themeName}.sm{
   .webkite-item-details{
     max-width: 25em;
     width:auto;
@@ -468,6 +469,6 @@ $colorVariant:light;
   }
 }
   
-#webkite-results.lg, #webkite-results.xl{
+#webkite-results.#{$themeName}.lg, #webkite-results.#{$themeName}.xl{
   .webkite-result-wrapper{width: 23%;}
   }
