@@ -89,6 +89,11 @@
 #webkite-results.business-directory-portrait.webkite-light p, #webkite-results.business-directory-portrait.webkite-light li {
   color: rgba(0, 0, 0, 0.6); }
 
+/******************************************** GENERAL */
+#webkite-results.business-directory-portrait.webkite-light {
+  text-align: left;
+  direction: ltr; }
+
 /******************************************** NAVIGATIONALS */
 #webkite-results.business-directory-portrait.webkite-light .webkite-results-header, #webkite-results.business-directory-portrait.webkite-light .webkite-results-footer {
   text-align: justify;
