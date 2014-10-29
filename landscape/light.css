@@ -522,7 +522,7 @@
     border-radius: 3px;
     color: rgba(0, 0, 0, 0.7);
     background: #fff;
-    padding: 4px 5px;
+    padding: 6px 7px;
     -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -530,8 +530,8 @@
     position: relative;
     z-index: 10; }
   #webkite-results.business-directory-landscape.webkite-light #webkite-tooltip:after, #webkite-results.business-directory-landscape.webkite-light #webkite-tooltip:before {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background: #fff;
     border: 1px solid transparent;
     -webkit-transform: rotate(45deg);
@@ -542,8 +542,8 @@
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -5px;
-    margin-left: -5px;
+    bottom: -4px;
+    margin-left: -4px;
     z-index: 11;
     background-clip: padding-box; }
   #webkite-results.business-directory-landscape.webkite-light #webkite-tooltip:after {
@@ -553,7 +553,7 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
     border-color: rgba(0, 0, 0, 0.2); }
   #webkite-results.business-directory-landscape.webkite-light #webkite-tooltip.webkite-tooltip-top:after, #webkite-results.business-directory-landscape.webkite-light #webkite-tooltip.webkite-tooltip-top:before {
-    top: -5px;
+    top: -4px;
     bottom: auto; }
   #webkite-results.business-directory-landscape.webkite-light #webkite-tooltip.webkite-tooltip-left:after, #webkite-results.business-directory-landscape.webkite-light #webkite-tooltip.webkite-tooltip-left:before {
     left: 10px;
