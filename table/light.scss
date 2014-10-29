@@ -225,16 +225,22 @@ $themeName:business-directory-table;
       display: inline-block;
       font: 700 1em/1.3 "Open Sans";
       margin: 0;
-      padding: $mainGutter/4 $mainGutter/4;
-      height: 2em;
+      padding: $mainGutter/4 $mainGutter $mainGutter/4 $mainGutter/4;
       margin-left: -$mainGutter/4;
+      position:relative;
+      max-width:100%;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
       i{
         background: url("angle-light.png") center center no-repeat;
-        display: inline-block;
+        position:absolute;
         height: 10px;
-        margin-left: $mainGutter/2;
         pointer-events: none;
         width: 10px;
+        top:50%;
+        margin-top:-5px;
+        right:$mainGutter/4;
         }
       &:hover{
         border: 1px solid $lighterOpacity;

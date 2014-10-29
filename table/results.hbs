@@ -73,7 +73,7 @@
                   <li class="xs-only">
                     {{#if filterable}}
                       <b class="inline-filter-button">
-                        <a class="webkite-toggle" data-target=".{{../../id}}-{{name}}-menu">{{downcase displayName}}<i></i></a>
+                        <a class="webkite-tooltip webkite-toggle" data-target=".{{../../id}}-{{name}}-menu" title="{{displayName}}" data-webkite-tooltip="touchdisabled">{{downcase displayName}}<i></i></a>
                         <ul class="{{../../id}}-{{name}}-menu inline-filter-menu webkite-hide webkite-menu">
                           {{#each filterableValues}}
                             <li><a href="#" class="webkite-add-filter webkite-toggle" data-target=".{{../../../id}}-{{../name}}-menu" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a></li>
@@ -120,7 +120,7 @@
                   <li class="sm-only">
                     {{#if filterable}}
                       <b class="inline-filter-button">
-                        <a class="webkite-toggle" data-target=".{{../../id}}-{{name}}-menu">{{downcase displayName}}<i></i></a>
+                        <a class="webkite-tooltip webkite-toggle" data-target=".{{../../id}}-{{name}}-menu" title="{{displayName}}" data-webkite-tooltip="touchdisabled">{{downcase displayName}}<i></i></a>
                         <ul class="{{../../id}}-{{name}}-menu inline-filter-menu webkite-hide webkite-menu">
                           {{#each filterableValues}}
                             <li><a href="#" class="webkite-add-filter webkite-toggle" data-target=".{{../../../id}}-{{../name}}-menu" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a></li>
