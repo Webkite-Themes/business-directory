@@ -24,8 +24,15 @@
     -ms-transition: none;
     -o-transition: all 0 none;
     transition: none; }
+  #webkite-results.business-directory-landscape.webkite-dark header, #webkite-results.business-directory-landscape.webkite-dark footer {
+    float: none;
+    width: auto;
+    display: block; }
   #webkite-results.business-directory-landscape.webkite-dark button, #webkite-results.business-directory-landscape.webkite-dark select, #webkite-results.business-directory-landscape.webkite-dark input {
-    text-transform: none; }
+    text-transform: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
     #webkite-results.business-directory-landscape.webkite-dark button:active, #webkite-results.business-directory-landscape.webkite-dark select:active, #webkite-results.business-directory-landscape.webkite-dark input:active {
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
